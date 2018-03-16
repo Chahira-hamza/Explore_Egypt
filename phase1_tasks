@@ -1,0 +1,22 @@
+
+We need to use 2 design patterns: (suggestion: Singleton for Admin, and ... ?)
+
+1. User class (inherit from it for tourguide & for advertisers): log in/ log out/ forget password (sql queries + java class + drawing GUI )
+Documents: SDS
+	
+2. Admins's functionality (sql queries + java Class + drawing of the GUI pages you want with the options and functions calls specified)
+Make Admin singleton
+Documents: STP (with number 4)
+
+
+3. Tourist's functionality (sql queries + java Class + drawing of GUI pages)
+Documents: test cases
+
+
+4. GUI pages for Admin & Tourist
+Documents: STP 
+
+Each one adds the tasks he does in the Project Taskboard document and fill all the row's details as much as possible
+Each one adds the functionality in the release document
+
+We can ask about the difference between STP and test case documents, el 2 7asahom da5lin fe ba3d (testing) !

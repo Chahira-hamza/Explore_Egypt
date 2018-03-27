@@ -1,0 +1,19 @@
+
+Pre-requisite:
+
+manifest.json should be put in your project/web folder
+
+You will need to create an extension on google chrome using the following link (Rob Donovan's answer)
+https://superuser.com/questions/224500/how-to-display-local-images-in-chrome-using-file-protocol
+
+
+Add all the .jpg (images) and .jsp files in your project/web folder. 
+Take care when you create a new jsp file (webpage) to change the path to project/web
+
+index.jsp is the homepage that starts on the browser
+
+Still needs checking:
+using the java bean class, to read the input from the user
+and integrating with the database
+
+Note: if glassfish version 4.1.1 is giving you errors (unfixed bugs), downgrade to version 4.1.0 

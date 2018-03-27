@@ -7,7 +7,7 @@ You will need to create an extension on google chrome using the following link (
 https://superuser.com/questions/224500/how-to-display-local-images-in-chrome-using-file-protocol
 
 
-Add all the .jpg (images) and .jsp files in your project/web folder. 
+Add all the .jpg (images) from the Images folder on the repository and .jsp files in your project/web folder. 
 Take care when you create a new jsp file (webpage) to change the path to project/web
 
 index.jsp is the homepage that starts on the browser

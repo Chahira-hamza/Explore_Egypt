@@ -1,5 +1,6 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,33 +15,33 @@
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 5</div>
-  <img src="chrome-extension://ikjegeaacfeaidfajnaaipjhhbeepgdp/nl1.jpg"  height="460px" width="1024px">
+  <img src="chrome-extension://cepomndpolfdigigicogmfiaelajoopg/nl1.jpg"  height="460px" width="1024px">
   <div class="text">Egypt The Land of Wonders</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 5</div>
-  <img src="chrome-extension://ikjegeaacfeaidfajnaaipjhhbeepgdp/MiddleEast-Egypt-Aswan-Abu-Simbel-Guest.jpg"  height="460px" width="1024px">
+  <img src="chrome-extension://cepomndpolfdigigicogmfiaelajoopg/MiddleEast-Egypt-Aswan-Abu-Simbel-Guest.jpg"  height="460px" width="1024px">
   <div class="text">Discover</div>
 </div>
 
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 5</div>
-  <img src="chrome-extension://ikjegeaacfeaidfajnaaipjhhbeepgdp/EBF2BD6C-F561-7082-7EA0-E5F5A69FB5F3.jpg"  height="460px" width="1024px">
+  <img src="chrome-extension://cepomndpolfdigigicogmfiaelajoopg/EBF2BD6C-F561-7082-7EA0-E5F5A69FB5F3.jpg"  height="460px" width="1024px">
   <div class="text">Leap Through Time</div>
 </div>
 
 
 <div class="mySlides fade">
   <div class="numbertext">4 / 5</div>
-  <img src="chrome-extension://ikjegeaacfeaidfajnaaipjhhbeepgdp/a404732f54630cd36ab03e592c1520e7.jpg"  height="460px" width="1024px">
+  <img src="chrome-extension://cepomndpolfdigigicogmfiaelajoopg/a404732f54630cd36ab03e592c1520e7.jpg"  height="460px" width="1024px">
   <div class="text">Find Red Sea Gems</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">5 / 5</div>
-  <img src="chrome-extension://ikjegeaacfeaidfajnaaipjhhbeepgdp/Nile-river.jpg" height="460px" width="1024px">
+  <img src="chrome-extension://cepomndpolfdigigicogmfiaelajoopg/Nile-river.jpg" height="460px" width="1024px">
   <div class="text">Cruise The River Nile</div>
 </div>
 
@@ -65,10 +66,10 @@
 
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="/action_page.php">
+    <form class="modal-content animate"  action = "LoginServlet" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="chrome-extension://ikjegeaacfeaidfajnaaipjhhbeepgdp/user-128.png" alt="Avatar" class="avatar" style="width: 128px; height:128 px;" >
+      <img src="chrome-extension://cepomndpolfdigigicogmfiaelajoopg/user-128.png" alt="Avatar" class="avatar" style="width: 128px; height:128 px;" >
     </div>
 
     <div class="container">
@@ -106,10 +107,10 @@ window.onclick = function(event) {
 
 <div id="id02" class="modal">
   
-  <form class="modal-content animate" action="/action_page.php">
+    <form class="modal-content animate" action="CreateAccServlet" method = "post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="chrome-extension://ikjegeaacfeaidfajnaaipjhhbeepgdp/user-128.png" alt="Avatar" class="avatar" style="width: 128px; height:128 px;" >
+      <img src="chrome-extension://cepomndpolfdigigicogmfiaelajoopg/user-128.png" alt="Avatar" class="avatar" style="width: 128px; height:128 px;" >
     </div>
 
     <div class="container">

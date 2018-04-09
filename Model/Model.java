@@ -90,3 +90,53 @@ public class Model {
          }
     }
 }
+
+    protected boolean addTourist(int mobile,String email, String country, String L1, String L2, String L3,int ID)
+    {
+        try
+        {
+            con.setAutoCommit(false);
+            PreparedStatement stp;
+            String query = "Insert into tourists (mobile_num, email, country, L1,L2,L3, tourist_ID ) Values (?,?,?,?,?,?,?)";
+            stp =  con.prepareStatement(query);
+            stp.setString(1, mobile);
+            stp.setString(2, email);
+            stp.setString(3, country);
+            stp.setString(4, L1);
+            stp.setString(5, L2);
+            stp.setString(6, L3);
+            stp.setString(7, ID);
+
+            stp.executeUpdate();
+            con.commit();
+            return true;
+        }
+        catch (Exception e)
+        {
+            return false;
+        }
+    }
+
+    protected boolean rateSite(int ID, String siteName, int rate)
+    {
+        try
+        {
+            con.setAutoCommit(false);
+            PreparedStatement stp;
+            String query = "Insert into site_rating (int user_ID, String site_name, int rating) Values (?,?,?)";
+            stp =  con.prepareStatement(query);
+            stp.setString(1, ID);
+            stp.setString(2, siteName);
+            stp.setString(3, rate);
+
+            stp.executeUpdate();
+            con.commit();
+            return true;
+        }
+        catch (Exception e)
+        {
+            return false;
+        }
+    }
+}
+

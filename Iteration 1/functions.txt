@@ -1,0 +1,50 @@
+
+
+Model.java
+
+Model() 
+boolean createAccount(String user, String pass1, String pass2)
+boolean authenticate(String user, String pass)
+User getUserDetails(String username)
+boolean addSite(String name, String address, String content,int Stime,int Etime,InputStream inputStream)
+boolean addTourist(int mobile,String email, String country, String L1, String L2, String L3,int ID)
+boolean rateSite(int ID, String siteName, int rate)
+
+
+************************************************************************
+
+User.java
+
+public String getUsername()
+public void setUsername(String username)
+public int getUserType()
+public void setUserType(int userType)
+public int getUserID()
+public void setUserID(int userID)
+
+
+
+************************************************************************
+
+LoginServlet.java
+
+protected void doPost(HttpServletRequest request, HttpServletResponse response)
+
+
+************************************************************************
+
+AddTourguideServlet.java
+
+protected void doPost(HttpServletRequest request, HttpServletResponse response)
+
+************************************************************************
+
+AddSiteServlet.java
+
+protected void doPost(HttpServletRequest request, HttpServletResponse response)
+
+************************************************************************
+
+CreateAccServlet.java
+
+protected void doPost(HttpServletRequest request, HttpServletResponse response)

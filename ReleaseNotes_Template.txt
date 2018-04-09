@@ -1,0 +1,29 @@
+Group 12
+Explore Egypt
+Version 1.0
+
+New Features
+1. Create Account as a guest/tourist
+2. Log in
+3. Log out
+4. Forget password
+5. Add sites as Admin
+6. View Museums as a Guest
+7. Rate sites as a Guest
+8. Edit contact info as a Tourist
+ 
+Removed Features 
+not applicable
+
+Enhanced Performance
+not applicable
+
+Enhanced Look-and-Feel
+not applicable
+
+Unsupported Functionality
+not applicable
+
+Fixed Bugs
+not applicable
+

@@ -1,12 +1,13 @@
 
-
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import newpackage.User;
 
 /**
  *
@@ -24,17 +25,32 @@ public class CreateAccServlet extends HttpServlet {
         username = request.getParameter("uname");
         password = request.getParameter("psw");
         passwordre = request.getParameter("pswre");
+        
+        PrintWriter out = response.getWriter();
+         
+       
        
         Model myModel = new Model();
         
         boolean result = myModel.createAccount(username, password, passwordre);
         
         if (result)
-            response.sendRedirect("success.jsp");
+        {
+            User user = myModel.getUserDetails(username);
+            
+            if (user.getUserType() == 1)
+            {
+                // guest
+                request.getSession().setAttribute("user", user);
+                response.sendRedirect("guest.jsp");
+            }
+        }
         else
-            response.sendRedirect("error.jsp");
-        
-        
+        {
+            RequestDispatcher rd = request.getRequestDispatcher("homepage.jsp");
+            out.println("<font color=red> Username Taken or incorecct password </font>");
+            rd.include(request, response);
+        }
         
     }
 

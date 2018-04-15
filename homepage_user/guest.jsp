@@ -106,7 +106,7 @@ function showSlides(n) {
  
 <div class = "navbar">
 <ul>
-<li><a href= "#">Museums</a></li>
+<li><a href= "MuseumsPage.jsp">Museums</a></li>
 <li><a href= "#">Maps</a></li>
 <li><a href= "#">History</a></li>
 <li><a href= "#">Era</a></li>

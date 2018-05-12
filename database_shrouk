@@ -1,0 +1,56 @@
+CREATE TABLE `addadvertisements` (
+  `Advertiserid` int(11) NOT NULL,
+  `Title1` varchar(45) DEFAULT NULL,
+  `Description1` varchar(45) DEFAULT NULL,
+  `Time1` int(11) DEFAULT NULL,
+  `Title2` varchar(45) DEFAULT NULL,
+  `Description2` varchar(45) DEFAULT NULL,
+  `Time2` int(11) DEFAULT NULL,
+  `canadd` int(11) DEFAULT NULL,
+  `pay1` int(11) DEFAULT NULL,
+  `pay2` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Advertiserid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1
+
+
+
+CREATE TABLE `payfees` (
+  `AdvertiserId` int(11) NOT NULL,
+  `CardNumber1` int(11) DEFAULT NULL,
+  `CardName1` varchar(45) DEFAULT NULL,
+  `Secuirtynumber1` int(11) DEFAULT NULL,
+  `bank1` varchar(45) DEFAULT NULL,
+  `CardType1` varchar(45) DEFAULT NULL,
+  `CardNumber2` int(11) DEFAULT NULL,
+  `CardName2` varchar(45) DEFAULT NULL,
+  `Secuirtynumber2` int(11) DEFAULT NULL,
+  `bank2` varchar(45) DEFAULT NULL,
+  `CardType2` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`AdvertiserId`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1
+
+
+
+CREATE TABLE `sites` (
+  `SName` varchar(255) NOT NULL,
+  `Description` text,
+  `Address` varchar(255) DEFAULT NULL,
+  `Stime` time(6) DEFAULT NULL,
+  `Etime` time(6) DEFAULT NULL,
+  `photo` varchar(255) DEFAULT NULL,
+  `type1` varchar(225) DEFAULT NULL,
+  `type2` varchar(225) DEFAULT NULL,
+  PRIMARY KEY (`SName`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+
+
+CREATE TABLE `users` (
+  `username` varchar(20) NOT NULL,
+  `password_` varchar(20) NOT NULL,
+  `user_type` int(11) NOT NULL,
+  `user_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Accepted` int(11) DEFAULT NULL,
+  PRIMARY KEY (`user_ID`),
+  UNIQUE KEY `username` (`username`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1
